@@ -16,32 +16,26 @@
 
   .card{
     display: flex;
-    height: 50%;
+    height: auto;
     width: 500px;
     background: white;
-    flex-direction: row;
     border-radius: 8px;
     box-shadow: 1px 10px 20px rgb(69, 129, 104, 0.2);
   }
   .left{
-    height: 100%;
-    width: 250px;
-    background: blue;
+    height: cover;
+    width: 50%;
     border-radius: 8px 0px 0px 8px;
-
+    background-image: url(images/image-product-desktop.jpg);
+    background-size: cover;
   }
   .right{
     height: 100%;
-    width: 250px;
+    width: 50%;
     background: white;
     border-radius: 8px;
     padding: 25px;
 
-  }
-  img{
-    height: 100%;
-    width: 100%;
-    border-radius: 8px 0px 0px 8px;
   }
   .heading{
     font-family: "Bookman Old Style", Serif;
@@ -102,57 +96,54 @@
  }
 
  @media (max-width: 767px) {
-    .container{
-        padding: 0px;
-    }
-    .card {
-      flex-direction: column;
-      width: 90%;
-      height: 95%;
-      max-width: 100%
-    }
-
-    .left {
-      height: 30%;
-      border-radius: 8px 8px 0 0;
-      width: 100%;
-      }
-      img{
-        height: 100%;
-        width: 100%;
-        border-radius: 8px 0px 0px 8px;
-      }
-
-    .right {
-      padding: 25px;
-      width: 100%;
-      height: 60%;
-    }
-
-    .heading {
-      font-size: 30px;
-      line-height: 30px;
-    }
-
-    .description {
-      font-size: 18px;
-      line-height: 28px;
-    }
-
-    .currentprice {
-      font-size: 45px;
-    }
-    .previousprice{
-        font-size: 18px;
-        color: #505050
-    }
-    .button{
-        width: 100%;
-        height: 50px;
-        font-size: 20px;
-    }
-    .images{
-        width:20px;
-        height: 20px;
-    }
+  .container{
+    padding: 0px;
   }
+  .card {
+    flex-direction: column;
+    width: 90%;
+    height: 95%;
+    max-width: 100%
+  }
+
+  .left {
+    height: 30%;
+    border-radius: 0;
+    width: 100%;
+    background-image: url(images/image-product-mobile.jpg);
+  }
+    
+
+  .right {
+    padding: 25px;
+    width: 100%;
+    height: 60%;
+  }
+
+  .heading {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .description {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .currentprice {
+    font-size: 45px;
+  }
+  .previousprice{
+      font-size: 18px;
+      color: #505050
+  }
+  .button{
+      width: 100%;
+      height: 50px;
+      font-size: 20px;
+  }
+  .images{
+      width:20px;
+      height: 20px;
+  }
+}
